@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Eliminar el desplazamiento en la ventana */
+}
+
+#map {
+    height: 100%; /* Altura del mapa */
+    width: 100%;  /* Ancho del mapa */
+}
+.legend {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-size: 14px;  /* Cambiar el tamaño de fuente */
+    z-index: 1000;  /* Asegúrate de que esté por encima de otras capas */
+}
+.legend div {
+    display: flex;  /* Usar flex para alinear el color y el texto */
+    align-items: center;  /* Alinear verticalmente el texto y el color */
+    margin-bottom: 5px;  /* Espacio entre los elementos */
+}
+
+.legend span {
+    display: inline-block;
+    width: 20px;  /* Ancho del cuadro de color */
+    height: 20px;  /* Alto del cuadro de color */
+    margin-right: 5px;  /* Espacio entre el cuadro de color y el texto */
+}
