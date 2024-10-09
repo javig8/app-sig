@@ -59,7 +59,7 @@ var arbratLayer = L.geoJSON(null, {
         var color = colorMapArbrat[feature.properties.naturalita] || "#000"; // Asignar color según categoría o negro por defecto
         return L.circleMarker(latlng, {
             radius: 4,
-            fillColor: "#008000",  // Color para los puntos de árboles
+            fillColor: color,  // Color para los puntos de árboles
             color: color,
             weight: 1,
             opacity: 1,
